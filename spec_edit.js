@@ -107,7 +107,6 @@ jQuery(document).ready(function($) {
   var cols = ['.cf1','.cf2b','.cf3a','.cf4a'];
   DoTabIndexPg('.Pg3',cols,'.rf',1,13);
 
-    //V2.2
   $('.ffdna, .ffpedna, .blood').each(function() {
     var elid = $(this).attr('id')
     if (elid.indexOf('dtm')>=0) {
@@ -116,8 +115,6 @@ jQuery(document).ready(function($) {
   })
 
   $('.numberinput.ffdna, .numberinput.ffpedna, .numberinput.blood').css({'width':'60px'})
-
-
   // -- /form layout --------------------------------------------------------------------------------------------------
 
   // -- initialisation ------------------------------------------------------------------------------------------------
@@ -464,7 +461,7 @@ jQuery(document).ready(function($) {
   $(".numberinput").keypress(function (event) {return isNumber(event, this);});
   // tumour size
   $('#id_tumour_size').blur(function() {validate($(this),'N500')});
-  // numeric µl fields
+  // numeric Âµl fields
   $('.N1000').blur(function() {validate($(this),'N1000')});
   // remove any invalid input data on page load
   $('.datetimeinputsecs').each(function() {validate($(this), 'dtms', 'clear_data')});
