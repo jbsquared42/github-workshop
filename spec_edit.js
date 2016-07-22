@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
     $.session.set('Pgvalue', '1');
     currPg='1';
   }
-
+  // some code changes made here in test-branch2
   // -- new specimen --------------------------------------------------------------------------------------------------
   elSID=$('#id_clinical_sample_id');
   SID=elSID.val();
